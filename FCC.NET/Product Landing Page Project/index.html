@@ -8,11 +8,15 @@
     </head>
     <body>
         <header id="header">
-            <img id="header-logo" src="./Images/trombone-logo.png" alt="Trombone logo"/>
             <nav id="nav-bar">
-                <a class="nav-link" href="#Features">Features</a>
-                <a class="nav-link" href="#How_It_Works">How It Works</a>
-                <a class="nav-link" href="#Pricing">Pricing</a>
+                <div class="logo">
+                    <img id="header-logo" src="./Images/trombone-logo.png" alt="Trombone logo"/>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="nav-item" href="#Features">Features</a></li>
+                    <li><a class="nav-item" href="#How_It_Works">How It Works</a></li>
+                    <li><a class="nav-item" href="#Pricing">Pricing</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -21,31 +25,31 @@
                 <label for="email">
                     <input name="email" required type="email" id="email" placeholder="Enter your email address">
                 </label>
-                <input type="submit" value="GET STARTED"/>
+                <div class="button">
+                <input id="submit" type="submit" value="GET STARTED"/>
+                </div>
             </section>
-            <section id="Features">
-                <img src="./Images/fire icon.png" alt="Fire icon"/>
-                <header>Premium Materials</header>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+            <section class="features" id="Features">
+                <img class="features-img" src="./Images/fire icon.png" alt="Fire icon"/>
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
             </section>
-            <section>
-                <img src="./Images/truck icon.png" alt="Truck icon"/>
-                <header>Fast Shipping</header>
+            <section  class="features">
+                <img class="features-img" src="./Images/truck icon.png" alt="Truck icon"/>
+                <h2>Fast Shipping</h2>
                 <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
             </section>
-            <section>
-                <img src="./Images/battery-icon.png" alt="Battery icon"/>
-                <header>Quality Assurance</header>
+            <section  class="features">
+                <img class="features-img" src="./Images/battery-icon.png" alt="Battery icon"/>
+                <h2>Quality Assurance</h2>
                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
             </section>
-            <section id="#How_It_Works">
-                <iframe width="425" height="315" id="video"
-                src="https://youtu.be/y8Yv4pnO7qc">
-                </iframe>
+            <section id="How_It_Works">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=Tg2guetcidZTArRh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
             <section id="Pricing">
-                <div>
-                    <header>TENOR TROMBONE</header>
+                <div class="pricing-tag-left">
+                    <h3>TENOR TROMBONE</h3>
                     <p>$600</p>
                     <ul>
                         <li>Lorem ipsum.</li>
@@ -53,10 +57,12 @@
                         <li>Lorem ipsum dolor.</li>
                         <li>Lorem ipsum.</li>
                     </ul>
-                    <button type="button">SELECT</button> 
+                    <div class="pricing-button">
+                        <button type="button">SELECT</button>
+                    </div> 
                 </div>
-                <div>
-                    <header>BASS TROMBONE</header>
+                <div class="pricing-tag-middle">
+                    <h3>BASS TROMBONE</h3>
                     <p>$900</p>
                     <ul>
                         <li>Lorem ipsum.</li>
@@ -64,10 +70,12 @@
                         <li>Lorem ipsum dolor.</li>
                         <li>Lorem ipsum.</li>
                     </ul>
-                    <button type="button">SELECT</button> 
+                    <div class="pricing-button">
+                        <button type="button">SELECT</button> 
+                    </div>
                 </div>
-                <div>
-                    <header>VALVE TROMBONE</header>
+                <div class="pricing-tag-right">
+                    <h3>VALVE TROMBONE</h3>
                     <p>$1200</p>
                     <ul>
                         <li>Lorem ipsum.</li>
@@ -75,14 +83,20 @@
                         <li>Lorem ipsum dolor.</li>
                         <li>Lorem ipsum.</li>
                     </ul>
-                    <button type="button">SELECT</button> 
+                    <div class="pricing-button">
+                        <button type="button">SELECT</button> 
+                    </div>
                 </div>
             </section>
             <footer>
-                <a href="https://product-landing-page.freecodecamp.rocks/#">Privacy</a>
-                <a href="https://product-landing-page.freecodecamp.rocks/#">Terms</a>
-                <a href="https://product-landing-page.freecodecamp.rocks/#">Contact</a>
-                <p>Copyright 2016, Original Trombones</p>
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <a href="https://product-landing-page.freecodecamp.rocks/#">Privacy</a>
+                        <a href="https://product-landing-page.freecodecamp.rocks/#">Terms</a>
+                        <a href="https://product-landing-page.freecodecamp.rocks/#">Contact</a>
+                    </div>
+                    <p>Copyright 2016, Original Trombones</p>
+                </div>
             </footer>
         </main>
     </body>
