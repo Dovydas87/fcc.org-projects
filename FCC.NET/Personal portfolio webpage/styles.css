@@ -147,7 +147,7 @@ header {
 
 .lets-work-together {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-color: var(--main-gray);
   display: flex;
   justify-content: center;
@@ -169,12 +169,47 @@ header {
   opacity: 80%;
 }
 
+.all-icons {
+  display: flex;
+  flex-direction: row;
+}
+
 .lets-work-together .social-icons a i {
-  border: 1px solid black;
   font-size: 25px;
   color: var(--main-white);
   padding: 15px 30px;
 }
+
+ .social-icons:hover {
+  transform: translateY(8px);
+  transition: 1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+#contact {
+  background-color: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+  height: 125px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact p {
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  color: var(--main-white);
+}
+
+#contact p a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+
 
 
 
