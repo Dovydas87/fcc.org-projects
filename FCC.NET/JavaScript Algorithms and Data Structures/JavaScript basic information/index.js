@@ -109,3 +109,70 @@ ourDog["bark"] = "bow-wow";
 
 Delete properties from objects:
 delete ourDog.bark; */
+
+ACESS NESTED ARRAYS
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+ourPets[0].names[1];
+ourPets[1].names[0];
+
+
+ACCESS NESTED OBJECTS
+
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
+
+
+-----------------LOOPS--------------------
+
+WHILE LOOP 
+
+const myArray = [];
+let i = 5;
+
+while (i >= 0) {
+  myArray.push(i);
+  i--;
+}
+
+FOR LOOP
+
+/* For loops are declared with three optional expressions separated by semicolons:
+
+for (a; b; c), where 
+a is the initialization statement, 
+b is the condition statement, and 
+c is the final expression.
+
+The initialization statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
