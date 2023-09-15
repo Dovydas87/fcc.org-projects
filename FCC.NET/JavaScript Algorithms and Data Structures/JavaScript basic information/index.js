@@ -175,4 +175,18 @@ a is the initialization statement,
 b is the condition statement, and 
 c is the final expression.
 
-The initialization statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
+The initialization statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable. */
+
+DO ... WHILE LOOP
+
+/* It is called a do...while loop because it will first do one pass of the code inside the loop no matter what, and then continue to run the loop while the specified condition evaluates to true. */
+
+RECURSION
+
+function multiply(arr, n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return multiply(arr, n - 1) * arr[n - 1];
+  }
+}
