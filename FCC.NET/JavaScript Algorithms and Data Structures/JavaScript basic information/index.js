@@ -190,3 +190,22 @@ function multiply(arr, n) {
     return multiply(arr, n - 1) * arr[n - 1];
   }
 }
+
+-------Math.random()----- Math.floor()------
+
+Math.random() - generates random decimal numbers;
+Math.floor() - rounds it's value to the nearest whole number;
+
+To generate random number between two given min and max values:
+Math.floor(Math.random() * (max - min + 1)) + min
+
+parseInt() function parses a string and returns an integer.
+
+
+----------CONDITIONAL (TERNARY) OPERATOR --------------
+
+The syntax is
+ a ? b : c, 
+ where a is the condition, 
+ b is the code to run when the condition returns true, 
+ and c is the code to run when the condition returns false.
